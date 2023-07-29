@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>teste</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bloco1"></div>
+  <div class="bloco2"></div>
+  <div class="bloco3"></div>
+  
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+  <section>
+  	<iframe src="https://theus-iago.github.io/Projeto-No-Body" frameborder="0"></iframe>
+  </section>
+  <script>
+    /* document.getElementsByTagName("div")[0]
+    	document.getElementsByTagName("div")[1]
+    	document.getElementsByTagName("div")[2]
+    	for(cont=0;cont<=4;cont++) {
+    		const box = document.getElementsByTagName("div")[cont];
+    		box.style.backgroundColor = "red";
+    	} */
+    	box = [
+    		document.getElementById("box1"),
+    		document.getElementById("box2"),
+    		document.getElementById("box3"),
+    		document.getElementById("box4")
+    	];
+    	box[4] = document.createElement("div");
+    	box[4].classList="box";
+    	document.body.appendChild(box[4]);
+    	box[4].style.backgroundColor = 'red';
+    	for(cont=0;cont<=3;cont++) {
+    		box[cont].style.backgroundColor= 'blue';
+    	}
+  </script>
+</body>
+</html>
